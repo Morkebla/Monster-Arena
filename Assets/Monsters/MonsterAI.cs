@@ -12,7 +12,7 @@ public class MonsterAI : MonoBehaviour
 
     private float attackTimer = 0.0f;
 
-    private Vector3 targetCoordinates => target?.transform.position ?? Vector3.zero;
+    private Vector3 targetCoordinates => (target)? target.transform.position:Vector3.zero;
     float distance => (transform.position - targetCoordinates).magnitude;
 
     NavMeshAgent agent;
@@ -28,10 +28,21 @@ public class MonsterAI : MonoBehaviour
     {
         if (target == null)
         {
-            return;
+            if(gameObject.tag == ("Team A"))
+            {
+                target = GameObject.FindGameObjectWithTag("Team B");
+            }
+            else if (gameObject.tag == ("Team B"))
+            {
+                target = GameObject.FindGameObjectWithTag("Team A");
+            }
+        }
+        else
+        {
+            agent.SetDestination(targetCoordinates);
         }
 
-        agent.SetDestination(targetCoordinates);
+
 
         if (distance <= attackRange)
         {
