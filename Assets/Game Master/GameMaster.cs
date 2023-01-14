@@ -6,23 +6,11 @@ public class GameMaster : MonoBehaviour
 {
     [SerializeField] GameObject monster;
 
-    void Update()
-    { 
-        MonsterSummoner();
-    }
-
     public void MonsterSummoner()
     {
-        if (Input.GetMouseButtonDown(0))
+        if(monster != null)
         {
-            if(monster != null)
-            {
-                Instantiate(monster);
-            }
-        }
-        else
-        {
-            return;
+            Instantiate(monster);
         }
     }
 }
