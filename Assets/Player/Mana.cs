@@ -6,15 +6,15 @@ public class Mana : MonoBehaviour
 {
     [SerializeField] float maxMana = 100f;
     [SerializeField] float minMana = 0f;
-    [SerializeField] float currentMana;
+    [SerializeField] float _currentMana;
 
-    public float _currentMana { get { return currentMana; } }
+    public float currentMana { get { return _currentMana; } }
 
     [SerializeField] float manaRegen = 1f;
 
     private void Start()
     {
-        currentMana = maxMana;
+        _currentMana = maxMana;
     }
 
     private void Update()
@@ -24,14 +24,14 @@ public class Mana : MonoBehaviour
 
     private void ManaFlow()
     {
-        currentMana += manaRegen * Time.deltaTime;
-        currentMana = Mathf.Clamp(currentMana, minMana, maxMana);
+        _currentMana += manaRegen * Time.deltaTime;
+        _currentMana = Mathf.Clamp(_currentMana, minMana, maxMana);
     }
     public bool ReduceMana(float cost)
     {
-        if (cost <= currentMana)
+        if (cost <= _currentMana)
         {
-            currentMana -= cost;
+            _currentMana -= cost;
             return true;
         }
         else

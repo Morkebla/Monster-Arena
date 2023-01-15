@@ -16,7 +16,7 @@ public class GameMaster : MonoBehaviour
     {
         if (monster != null)
         {
-            if (mana.ReduceMana(cost) == true)
+            if (mana.ReduceMana(cost))
             {
                 Instantiate(monster);
             }
