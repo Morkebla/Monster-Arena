@@ -19,7 +19,7 @@ public class MonsterHP : MonoBehaviour
         _currentHP -= DamageAmount;
         if(_currentHP <= 0)
         {
-            Destroy(gameObject);
+           Destroy(gameObject);
         }
     }
 }
