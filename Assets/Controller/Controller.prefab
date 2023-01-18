@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4435973303755369305}
   - component: {fileID: 4435973303755369304}
+  - component: {fileID: 242919843}
   m_Layer: 0
-  m_Name: Game Master
+  m_Name: Controller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45,3 +46,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monster: {fileID: 0}
+  cost: 20
+--- !u!114 &242919843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4435973303755369318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fa50827793573b4d9e7899f78df7316, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxMana: 100
+  minMana: 0
+  _currentMana: 0
+  manaRegen: 1

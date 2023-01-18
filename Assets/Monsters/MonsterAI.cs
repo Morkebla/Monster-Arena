@@ -63,7 +63,6 @@ public class MonsterAI : MonoBehaviour
         if (enemyHp != null)
         {
             enemyHp.TakeDamage(damage);
-            Debug.Log("Damage: " + damage);
         }
     }
 
