@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameMaster : MonoBehaviour
+public class SummoningComponent : MonoBehaviour
 {
     [SerializeField] GameObject monster;
     [SerializeField] float cost = 20f;
