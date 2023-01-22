@@ -15,9 +15,10 @@ GameObject:
   - component: {fileID: 2692154139697356417}
   - component: {fileID: 2692154139697356416}
   - component: {fileID: 2692154139697356422}
+  - component: {fileID: 109930458}
   m_Layer: 0
   m_Name: Hero Monster
-  m_TagString: Untagged
+  m_TagString: Team B
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -153,6 +154,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxHP: 2000
+--- !u!114 &109930458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2692154139697356431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 622a14701c7210745bc60c40451afb57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackRange: 6
+  damage: 35
+  attackTime: 2
 --- !u!1001 &2692154140706109865
 PrefabInstance:
   m_ObjectHideFlags: 0

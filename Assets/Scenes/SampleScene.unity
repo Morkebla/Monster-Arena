@@ -252,10 +252,6 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1468728567}
-    - target: {fileID: 2692154139697356417, guid: 99572f6b9bbe5f146b55e096833a0bc5, type: 3}
-      propertyPath: m_StoppingDistance
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 2692154139697356421, guid: 99572f6b9bbe5f146b55e096833a0bc5, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -304,18 +300,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Hero Monster PlaceHolder
       objectReference: {fileID: 0}
-    - target: {fileID: 2692154139697356431, guid: 99572f6b9bbe5f146b55e096833a0bc5, type: 3}
-      propertyPath: m_TagString
-      value: Team B
-      objectReference: {fileID: 0}
-    - target: {fileID: 5229536752828385090, guid: 99572f6b9bbe5f146b55e096833a0bc5, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5229536752828385090, guid: 99572f6b9bbe5f146b55e096833a0bc5, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99572f6b9bbe5f146b55e096833a0bc5, type: 3}
 --- !u!114 &242919841 stripped
@@ -351,7 +335,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh23960
+  m_Name: pb_Mesh23972
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -989,7 +973,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh24242
+  m_Name: pb_Mesh24010
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4557,7 +4541,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh24034
+  m_Name: pb_Mesh24050
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5379,33 +5363,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0.094
       objectReference: {fileID: 0}
-    - target: {fileID: 413973983324784726, guid: 832cd900a052e10438c4a3b506c7e58b, type: 3}
-      propertyPath: m_StoppingDistance
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 413973983324784727, guid: 832cd900a052e10438c4a3b506c7e58b, type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 248282223}
-    - target: {fileID: 413973983324784727, guid: 832cd900a052e10438c4a3b506c7e58b, type: 3}
-      propertyPath: attackRange
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 413973983324784732, guid: 832cd900a052e10438c4a3b506c7e58b, type: 3}
       propertyPath: m_Name
       value: Player monster placeholder
-      objectReference: {fileID: 0}
-    - target: {fileID: 413973983324784732, guid: 832cd900a052e10438c4a3b506c7e58b, type: 3}
-      propertyPath: m_TagString
-      value: Team A
-      objectReference: {fileID: 0}
-    - target: {fileID: 4324829459846555075, guid: 832cd900a052e10438c4a3b506c7e58b, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4324829459846555075, guid: 832cd900a052e10438c4a3b506c7e58b, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 832cd900a052e10438c4a3b506c7e58b, type: 3}
@@ -5420,10 +5384,6 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 248282223}
-    - target: {fileID: 2692154139697356417, guid: 99572f6b9bbe5f146b55e096833a0bc5, type: 3}
-      propertyPath: m_StoppingDistance
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 2692154139697356421, guid: 99572f6b9bbe5f146b55e096833a0bc5, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -5493,14 +5453,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 481849914358376147, guid: fafe8f819a2e4ce4f8112bb3478269e4, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 481849914358376147, guid: fafe8f819a2e4ce4f8112bb3478269e4, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4545686388225182528, guid: fafe8f819a2e4ce4f8112bb3478269e4, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -5552,10 +5504,6 @@ PrefabInstance:
     - target: {fileID: 4545686388225182540, guid: fafe8f819a2e4ce4f8112bb3478269e4, type: 3}
       propertyPath: m_Name
       value: Enemy monster placehold
-      objectReference: {fileID: 0}
-    - target: {fileID: 4545686388225182540, guid: fafe8f819a2e4ce4f8112bb3478269e4, type: 3}
-      propertyPath: m_TagString
-      value: Team B
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fafe8f819a2e4ce4f8112bb3478269e4, type: 3}

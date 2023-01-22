@@ -17,7 +17,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5946438125550941878, guid: 048a39650984a3146a8b06b9795ed9a7, type: 3}
       propertyPath: m_Name
-      value: Player placeholder
+      value: Player monster placeholder
+      objectReference: {fileID: 0}
+    - target: {fileID: 5946438125550941878, guid: 048a39650984a3146a8b06b9795ed9a7, type: 3}
+      propertyPath: m_TagString
+      value: Team A
       objectReference: {fileID: 0}
     - target: {fileID: 5946438125550941882, guid: 048a39650984a3146a8b06b9795ed9a7, type: 3}
       propertyPath: m_RootOrder
@@ -25,55 +29,79 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5946438125550941882, guid: 048a39650984a3146a8b06b9795ed9a7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.25
+      value: -5.2894607
       objectReference: {fileID: 0}
     - target: {fileID: 5946438125550941882, guid: 048a39650984a3146a8b06b9795ed9a7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.58
+      value: 6.580452
       objectReference: {fileID: 0}
     - target: {fileID: 5946438125550941882, guid: 048a39650984a3146a8b06b9795ed9a7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 8.3
+      value: 8.282738
       objectReference: {fileID: 0}
     - target: {fileID: 5946438125550941882, guid: 048a39650984a3146a8b06b9795ed9a7, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.99965733
       objectReference: {fileID: 0}
     - target: {fileID: 5946438125550941882, guid: 048a39650984a3146a8b06b9795ed9a7, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: 0.026163872
       objectReference: {fileID: 0}
     - target: {fileID: 5946438125550941882, guid: 048a39650984a3146a8b06b9795ed9a7, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0.00000026175616
       objectReference: {fileID: 0}
     - target: {fileID: 5946438125550941882, guid: 048a39650984a3146a8b06b9795ed9a7, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: 0.0008175115
       objectReference: {fileID: 0}
     - target: {fileID: 5946438125550941882, guid: 048a39650984a3146a8b06b9795ed9a7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: 2.998
       objectReference: {fileID: 0}
     - target: {fileID: 5946438125550941882, guid: 048a39650984a3146a8b06b9795ed9a7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 0.002
       objectReference: {fileID: 0}
     - target: {fileID: 5946438125550941882, guid: 048a39650984a3146a8b06b9795ed9a7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: 0.094
       objectReference: {fileID: 0}
     - target: {fileID: 5946438125550941885, guid: 048a39650984a3146a8b06b9795ed9a7, type: 3}
       propertyPath: damage
-      value: 15
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5946438125550941885, guid: 048a39650984a3146a8b06b9795ed9a7, type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5946438125550941885, guid: 048a39650984a3146a8b06b9795ed9a7, type: 3}
+      propertyPath: attackTime
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5946438125550941885, guid: 048a39650984a3146a8b06b9795ed9a7, type: 3}
       propertyPath: attackRange
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 048a39650984a3146a8b06b9795ed9a7, type: 3}
+--- !u!1 &413973983324784732 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5946438125550941878, guid: 048a39650984a3146a8b06b9795ed9a7, type: 3}
+  m_PrefabInstance: {fileID: 6285695618956295914}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1468728568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 413973983324784732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 622a14701c7210745bc60c40451afb57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackRange: 5
+  damage: 15
+  attackTime: 2
