@@ -9,7 +9,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5946438125550941878, guid: 048a39650984a3146a8b06b9795ed9a7, type: 3}
       propertyPath: m_Name
-      value: Enemy placehold
+      value: Enemy placeholder Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 5946438125550941878, guid: 048a39650984a3146a8b06b9795ed9a7, type: 3}
+      propertyPath: m_TagString
+      value: Team B
       objectReference: {fileID: 0}
     - target: {fileID: 5946438125550941880, guid: 048a39650984a3146a8b06b9795ed9a7, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -21,7 +25,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5946438125550941882, guid: 048a39650984a3146a8b06b9795ed9a7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -21.06
+      value: -14.48
       objectReference: {fileID: 0}
     - target: {fileID: 5946438125550941882, guid: 048a39650984a3146a8b06b9795ed9a7, type: 3}
       propertyPath: m_LocalPosition.y
@@ -59,6 +63,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5946438125550941885, guid: 048a39650984a3146a8b06b9795ed9a7, type: 3}
+      propertyPath: damage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5946438125550941885, guid: 048a39650984a3146a8b06b9795ed9a7, type: 3}
+      propertyPath: attackTime
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5946438125550941885, guid: 048a39650984a3146a8b06b9795ed9a7, type: 3}
+      propertyPath: attackRange
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7728079817304841001, guid: 048a39650984a3146a8b06b9795ed9a7, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -69,3 +85,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 048a39650984a3146a8b06b9795ed9a7, type: 3}
+--- !u!1 &4545686388225182540 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5946438125550941878, guid: 048a39650984a3146a8b06b9795ed9a7, type: 3}
+  m_PrefabInstance: {fileID: 7894942464626146810}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &248282224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4545686388225182540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 622a14701c7210745bc60c40451afb57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackRange: 5
+  damage: 15
+  attackTime: 2
