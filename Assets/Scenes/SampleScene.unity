@@ -300,6 +300,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Hero Monster PlaceHolder
       objectReference: {fileID: 0}
+    - target: {fileID: 5229536752828385090, guid: 99572f6b9bbe5f146b55e096833a0bc5, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5229536752828385090, guid: 99572f6b9bbe5f146b55e096833a0bc5, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99572f6b9bbe5f146b55e096833a0bc5, type: 3}
 --- !u!114 &242919841 stripped
@@ -1131,6 +1139,11 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &635461147 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4435973303755369318, guid: ec074e679ac70e84fb8c59a008167def, type: 3}
+  m_PrefabInstance: {fileID: 1381066108}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -4524,12 +4537,25 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 242919843, guid: ec074e679ac70e84fb8c59a008167def, type: 3}
   m_PrefabInstance: {fileID: 1381066108}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 635461147}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6fa50827793573b4d9e7899f78df7316, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1381066112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635461147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d073a7940376bdf47978ba02317fb27a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  summonCooldown: 0.4
 --- !u!1 &1468728567 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 413973983324784732, guid: 832cd900a052e10438c4a3b506c7e58b, type: 3}
@@ -5371,6 +5397,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player monster placeholder
       objectReference: {fileID: 0}
+    - target: {fileID: 4324829459846555075, guid: 832cd900a052e10438c4a3b506c7e58b, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4324829459846555075, guid: 832cd900a052e10438c4a3b506c7e58b, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 832cd900a052e10438c4a3b506c7e58b, type: 3}
 --- !u!1001 &2692154140511299800
@@ -5453,6 +5487,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 481849914358376147, guid: fafe8f819a2e4ce4f8112bb3478269e4, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 481849914358376147, guid: fafe8f819a2e4ce4f8112bb3478269e4, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4545686388225182528, guid: fafe8f819a2e4ce4f8112bb3478269e4, type: 3}
       propertyPath: m_RootOrder
       value: 4
