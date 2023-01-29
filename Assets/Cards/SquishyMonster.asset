@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68149ef3e1f951d4aaf385b53989e2d8, type: 3}
+  m_Name: SquishyMonster
+  m_EditorClassIdentifier: 
+  _cardName: squishy_monster
+  _monster: {fileID: 3817487863397008434, guid: d15eff67b10afe3498f7d7c1ed541c00, type: 3}
+  _manaCost: 10
