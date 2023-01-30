@@ -1,27 +1,15 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &6285695618956295914
+--- !u!1001 &8150306240909859361
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 692834678296345102, guid: 048a39650984a3146a8b06b9795ed9a7, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 692834678296345102, guid: 048a39650984a3146a8b06b9795ed9a7, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5946438125550941878, guid: 048a39650984a3146a8b06b9795ed9a7, type: 3}
       propertyPath: m_Name
-      value: Player monster placeholder
-      objectReference: {fileID: 0}
-    - target: {fileID: 5946438125550941878, guid: 048a39650984a3146a8b06b9795ed9a7, type: 3}
-      propertyPath: m_TagString
-      value: Team A
+      value: SimpleMonster
       objectReference: {fileID: 0}
     - target: {fileID: 5946438125550941882, guid: 048a39650984a3146a8b06b9795ed9a7, type: 3}
       propertyPath: m_RootOrder
@@ -29,79 +17,51 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5946438125550941882, guid: 048a39650984a3146a8b06b9795ed9a7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.2894607
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5946438125550941882, guid: 048a39650984a3146a8b06b9795ed9a7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.580452
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5946438125550941882, guid: 048a39650984a3146a8b06b9795ed9a7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 8.282738
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5946438125550941882, guid: 048a39650984a3146a8b06b9795ed9a7, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.99965733
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5946438125550941882, guid: 048a39650984a3146a8b06b9795ed9a7, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.026163872
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5946438125550941882, guid: 048a39650984a3146a8b06b9795ed9a7, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.00000026175616
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5946438125550941882, guid: 048a39650984a3146a8b06b9795ed9a7, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0008175115
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5946438125550941882, guid: 048a39650984a3146a8b06b9795ed9a7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 2.998
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5946438125550941882, guid: 048a39650984a3146a8b06b9795ed9a7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0.002
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5946438125550941882, guid: 048a39650984a3146a8b06b9795ed9a7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0.094
-      objectReference: {fileID: 0}
-    - target: {fileID: 5946438125550941885, guid: 048a39650984a3146a8b06b9795ed9a7, type: 3}
-      propertyPath: damage
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5946438125550941885, guid: 048a39650984a3146a8b06b9795ed9a7, type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5946438125550941885, guid: 048a39650984a3146a8b06b9795ed9a7, type: 3}
-      propertyPath: attackTime
+    - target: {fileID: 7728079817304841001, guid: 048a39650984a3146a8b06b9795ed9a7, type: 3}
+      propertyPath: m_AnchorMax.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5946438125550941885, guid: 048a39650984a3146a8b06b9795ed9a7, type: 3}
-      propertyPath: attackRange
+    - target: {fileID: 7728079817304841001, guid: 048a39650984a3146a8b06b9795ed9a7, type: 3}
+      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 048a39650984a3146a8b06b9795ed9a7, type: 3}
---- !u!1 &413973983324784732 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5946438125550941878, guid: 048a39650984a3146a8b06b9795ed9a7, type: 3}
-  m_PrefabInstance: {fileID: 6285695618956295914}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1468728568
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 413973983324784732}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 622a14701c7210745bc60c40451afb57, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackRange: 5
-  damage: 15
-  attackTime: 2
