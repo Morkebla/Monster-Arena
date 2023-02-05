@@ -20,7 +20,8 @@ public class AIController : Controller
             if (summonTimer <= 0)
             {
                 summonTimer = summonCooldown;
-                PlayCard("simple_monster");
+                int cardToPlay = Random.Range(0, numberOfCardsInHand);
+                PlayCard(cardToPlay);
             }
         }
     }

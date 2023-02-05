@@ -9,21 +9,24 @@ public class CardInfoDB : ScriptableObject
     private Dictionary<string, CardInfo> _cardIndex;
 
     /// <summary>
-    ///     Find and returns a card from the card list by name 
+    ///     Find and returns a card from the card list by ID
     ///     
-    ///     Throws KeyNotFoundException if the cardName is not found.
+    ///     Throws KeyNotFoundException if the cardID is not found.
     /// </summary>
-    /// <param name="cardName">The name of the card being searched.</param>
-    /// <returns>The card info associated with the given card name.</returns>
-    public CardInfo FindCardByName(string cardName)
+    /// <param name="cardID">The ID of the card being searched.</param>
+    /// <returns>The card info associated with the given card ID.</returns>
+    public CardInfo FindCardByID(string cardID)
     {
         BuildCardIndexIfNeeded();
         
-        Debug.Assert(_cardIndex.ContainsKey(cardName), $"The Card info DB does not contain '{cardName}'. Did you mispell it?");
+        Debug.Assert(_cardIndex.ContainsKey(cardID), $"The Card info DB does not contain '{cardID}'. Did you mispell it?");
 
-        return _cardIndex[cardName];
+        return _cardIndex[cardID];
     }
 
+    /// <summary>
+    ///     Builds an internal index to reference cards by ID (if the index doesn't yet exist)
+    /// </summary>
     private void BuildCardIndexIfNeeded()
     {
         if (_cardIndex == null)
@@ -33,7 +36,7 @@ public class CardInfoDB : ScriptableObject
             _cardIndex = new Dictionary<string, CardInfo>();
             foreach (var card in _cardList)
             {
-                _cardIndex.Add(card.cardName, card);
+                _cardIndex.Add(card.cardID, card);
             }
         }
 

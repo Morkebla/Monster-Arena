@@ -10,8 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 68149ef3e1f951d4aaf385b53989e2d8, type: 3}
-  m_Name: SimpleMonster
+  m_Name: BigMonster
   m_EditorClassIdentifier: 
-  _cardName: simple_monster
-  _monster: {fileID: 2566569790069632151, guid: 38048f56dc7f2de4791c2e82f14152b0, type: 3}
-  _manaCost: 20
+  _cardID: big_mon
+  _displayName: Big Monster
+  _monster: {fileID: 392452193252427341, guid: b2063895ba9b0884882940dd9cb35892, type: 3}
+  _manaCost: 35
