@@ -9,8 +9,12 @@ using UnityEngine;
 [System.Serializable]
 public abstract class CardInfo : ScriptableObject
 {
-    [SerializeField] string _cardName;
-    public string cardName => _cardName;
+    [SerializeField] string _cardID;
+    [SerializeField] string _displayName;
+
+    public string cardID => _cardID;
+    public string displayName => _displayName;
+
 
     /// <summary> Returns wether the card can be played the specified controller. </summary>
     /// <param name="controller">The Player or AI controller to test the card with</param>

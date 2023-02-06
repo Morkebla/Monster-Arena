@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using System.Collections;
 using UnityEngine;
 
 /// <summary>
@@ -11,24 +13,91 @@ using UnityEngine;
 /// </summary>
 public class Controller : MonoBehaviour
 {
-    [SerializeField] CardInfoDB _cardInfoDB;
+    [SerializeField] PresetDeck _presetDeck;
+
+    private Deck _deck;
+    private Deck _discardPile;
+    private Hand _hand;
+
     private SummoningComponent _summoningComponent;    
     private Mana _mana;
 
-    public CardInfoDB cardInfoDB => _cardInfoDB;
+    private const float _drawTime = 3.0f;
+    private const int _startingHandSize = 3;
+
+
     public Mana mana => _mana;
     public SummoningComponent summoningComponent => _summoningComponent;
+
+    public int numberOfCardsInHand => _hand.numberOfCards;
 
     private void Awake()
     {
         _mana = GetComponent<Mana>();
         _summoningComponent = GetComponent<SummoningComponent>();
+
+        _deck = _presetDeck.CreateDeck();
+        _discardPile = new Deck();
+        _hand = new Hand();
+
+        _deck.Shuffle();
     }
 
-    public void PlayCard(string cardName)
+    private void Start()
     {
-        Debug.Assert(_cardInfoDB);
-        CardInfo card = _cardInfoDB.FindCardByName(cardName);
-        card?.Play(this);
+        StartCoroutine(AutoDraw());
+
+        // Draw the starting hand
+        for (int i = 0; i < _startingHandSize; i++)
+        {
+            DrawCard();
+        }
+    }
+
+    IEnumerator AutoDraw()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(_drawTime);
+            if (_hand.numberOfCards < 5)
+            {
+                DrawCard();
+                if (_deck.numberOfCards == 0)
+                {
+                    _discardPile.MoveAllCardsTo(_deck);
+                    _deck.Shuffle();
+                }
+            }
+        }
+    }
+
+    public void PlayCard(int handIndex)
+    {
+        Debug.Assert(_hand != null);
+        Debug.Assert(_discardPile != null);
+
+        CardInfo playedCard = _hand.PlayCard(this, handIndex);
+        if (playedCard != null)
+        {
+            _discardPile.AddCard(playedCard);
+        }
+    }
+
+    public CardInfo GetHandCard(int handIndex)
+    {
+        Debug.Assert(_hand != null);
+        return _hand.GetCardAt(handIndex);
+    }
+
+    private void DrawCard()
+    {
+        Debug.Assert(_hand != null);
+        Debug.Assert(_deck != null);
+
+        CardInfo drawnCard = _deck.Draw();
+        if (drawnCard != null)
+        {
+            _hand.AddCard(drawnCard);
+        }
     }
 }
