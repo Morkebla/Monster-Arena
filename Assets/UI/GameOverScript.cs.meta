@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 65f849bb4ad194e48a9b71f8d1ff25dc
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - heroTeamA: {instanceID: 0}
+  - heroTeamB: {instanceID: 0}
+  - backGround: {instanceID: 0}
+  - gameOverText: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
