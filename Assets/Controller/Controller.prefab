@@ -45,8 +45,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fb85c6d57ca3df42849d592b482c276, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monster: {fileID: 0}
-  cost: 20
+  _spawnLocation: {fileID: 0}
+  _monsterMaterial: {fileID: 0}
 --- !u!114 &242919843
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fa50827793573b4d9e7899f78df7316, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxMana: 100
-  minMana: 0
+  _maxMana: 100
+  _minMana: 0
   _currentMana: 0
   manaRegen: 1

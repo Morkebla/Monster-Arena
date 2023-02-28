@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4035601041413471145, guid: ec074e679ac70e84fb8c59a008167def, type: 3}
+      propertyPath: GlobalObjectIdHash
+      value: 1822263763
+      objectReference: {fileID: 0}
     - target: {fileID: 4435973303755369304, guid: ec074e679ac70e84fb8c59a008167def, type: 3}
       propertyPath: monster
       value: 
@@ -61,7 +65,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4435973303755369318, guid: ec074e679ac70e84fb8c59a008167def, type: 3}
       propertyPath: m_Name
-      value: PlayerController
+      value: PlayerController Variant
       objectReference: {fileID: 0}
     - target: {fileID: 4435973303755369318, guid: ec074e679ac70e84fb8c59a008167def, type: 3}
       propertyPath: m_TagString
@@ -86,4 +90,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a33200c38acdacc479d0af0586fe485f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _cardInfoDB: {fileID: 11400000, guid: 327be707f8ae3964383ec69668a3e94f, type: 2}
+  _presetDeck: {fileID: 11400000, guid: 111e65d364ea56941b669549ac5405d7, type: 2}
+  _heroMonsterPrefab: {fileID: 8636089982868508447, guid: 99572f6b9bbe5f146b55e096833a0bc5, type: 3}
+--- !u!114 &4037745543115495906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2200059241772722475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GlobalObjectIdHash: 951099334
+  AlwaysReplicateAsRoot: 1
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1

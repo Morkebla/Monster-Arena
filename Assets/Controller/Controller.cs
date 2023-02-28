@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Collections;
 using UnityEngine;
+using Unity.Netcode;
 
 /// <summary>
 /// A base controller class.
@@ -11,16 +12,20 @@ using UnityEngine;
 /// The base controller contrains what most players would have this class further specializes into
 /// AIController and PlayerController.
 /// </summary>
-public class Controller : MonoBehaviour
+public class Controller : NetworkBehaviour
 {
     [SerializeField] PresetDeck _presetDeck;
+    [SerializeField] GameObject _heroMonsterPrefab;
 
     private Deck _deck;
     private Deck _discardPile;
     private Hand _hand;
 
+    private GameMaster _gameMaster;
+
     private SummoningComponent _summoningComponent;    
     private Mana _mana;
+    private Team _team;
 
     private const float _drawTime = 3.0f;
     private const int _startingHandSize = 3;
@@ -35,6 +40,7 @@ public class Controller : MonoBehaviour
     {
         _mana = GetComponent<Mana>();
         _summoningComponent = GetComponent<SummoningComponent>();
+        _gameMaster = FindObjectOfType<GameMaster>();
 
         _deck = _presetDeck.CreateDeck();
         _discardPile = new Deck();
@@ -52,6 +58,18 @@ public class Controller : MonoBehaviour
         {
             DrawCard();
         }
+    }
+
+    public override void OnNetworkSpawn()
+    {
+        _gameMaster.RegisterController(this);
+        AssignTeam();        
+    }
+
+    private void AssignTeam()
+    {
+        _team = _gameMaster.AssignTeam(this);
+        gameObject.tag = _team.ToTag();
     }
 
     IEnumerator AutoDraw()

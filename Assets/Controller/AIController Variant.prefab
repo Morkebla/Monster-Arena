@@ -61,7 +61,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4435973303755369318, guid: ec074e679ac70e84fb8c59a008167def, type: 3}
       propertyPath: m_Name
-      value: AIController
+      value: AIController Variant
       objectReference: {fileID: 0}
     - target: {fileID: 4435973303755369318, guid: ec074e679ac70e84fb8c59a008167def, type: 3}
       propertyPath: m_TagString
@@ -86,5 +86,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d073a7940376bdf47978ba02317fb27a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _cardInfoDB: {fileID: 11400000, guid: 327be707f8ae3964383ec69668a3e94f, type: 2}
+  _presetDeck: {fileID: 11400000, guid: 111e65d364ea56941b669549ac5405d7, type: 2}
+  _heroMonsterPrefab: {fileID: 8636089982868508447, guid: 99572f6b9bbe5f146b55e096833a0bc5, type: 3}
   summonCooldown: 0.4
